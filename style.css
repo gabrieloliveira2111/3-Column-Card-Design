@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: var(--very-light-gray);
+}
+.container{
+    display: flex;
+    width: 900px;
+    height: 525px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.Sedans{
+    background-color: var(--bright-orange);
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.Suvs{
+    background-color: var(--dark-cyan);
+}
+.Luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0.8rem 0.8rem 0;
+}
+section{
+    padding: 48px;
+    color: #FFF;    
+}
+h2{
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: 'Oleo Script';
+    text-transform: uppercase;
+}
+p{
+    line-height: 28px;
+    padding-top: 40px;
+    font-family: 'Oleo Script';
+    font-size: 15px;
+    color: rgb(255, 255, 255, 0.7);
+}
+button{
+    font-family: 'Oleo Script';
+    font-size: 18px;
+    margin-top: 70px;
+    width: 155px;
+    height: 50px;
+    border-radius: 1.8rem;
+    border: 2px solid var(--very-light-gray);
+    transition: all 0.4s ease-in-out;
+}
+.color1{
+    color: var(--bright-orange);
+}
+.color2{
+    color: var(--dark-cyan);
+}
+.color3{
+    color: var(--very-dark-cyan);
+}
+
+.color1:hover{
+    background-color: var(--bright-orange);
+    color: #FFF;
+}
+.color2:hover{
+    background-color: var(--dark-cyan);
+    color: #FFF;
+}
+.color3:hover{
+    background-color: var(--very-dark-cyan);
+    color: #FFF;
+}
+
+@media (max-width: 900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 265px;
+        margin-top: 75px;
+    }
+    .Sedans{
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+    .Luxury{
+        border-radius: 0 0 0.8rem 0.8rem;
+    }
+    h2{
+        font-size: 40px;
+    }
+    p{
+        font-size: 22px;
+    }
+    button{
+        font-size: 25px;
+    }
+}
